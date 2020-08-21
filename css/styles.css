@@ -1,5 +1,5 @@
 body {
-  background-color: #eeeeee;
+  background-color: #f6f4e6;
 }
 
 img {
@@ -9,13 +9,13 @@ img {
 }
 
 h1 {
-  color: #d72323;
+  color: #fddb3a;
   font-Family: 'Raleway', Sans-Serif;
   font-Size: 44px;
 }
 
 p {
-  color: #eeeeee;
+  color: #f6f4e6;
   font-Family: 'Open Sans', Sans-Serif;
   font-Size: 15px;
 }
@@ -35,12 +35,13 @@ span {
 }
 
 .jumbotron {
+  margin-top: 30px;
   text-align: center;
-  background-color: #3a4750;
+  background-color: #52575d;
 }
 
 .footer {
-  background-color: #303841;
+  background-color: #52575d;
   color: #eeeeee;
   text-align: center;
   margin-top: 50px;
@@ -48,13 +49,12 @@ span {
   padding-bottom: 30px;
 }
 
-#result {
-  padding: 50px 0;
+.result {
   text-align: center;
-  
-
-  
-  /* display: none; */
+  background-color: #41444b;
+  color: #fddb3a;
+  font-Family: 'Raleway', Sans-Serif;
+  font-Size: 36px;
 }
 
 

@@ -15,11 +15,15 @@
     <div class="jumbotron">
       <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
       <img src="https://live.staticflickr.com/65535/48143624427_e490d7ee36_b.jpg" alt="Mr. Robogers image">
-      <p>Enter a number below to watch Mr. Robogers counts!</p>
+      <p>Enter a number below to watch Mr. Robogers count!</p>
     </div>
     
     <form id="formOne">
       <div class="form-group">
+        <div class="form-group">
+          <label for="name">What's your name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
         <label for="numInput">Enter a number:</label>
         <input id="numInput" class="form-control" type="text">
       </div>
@@ -27,7 +31,7 @@
         <button type="submit" class="btn">Submit!</button>
       </div>  
     </form>
-    <div id="result">
+    <div class="result">
         <span id="resultList"></span>
     </div>
   </div>
