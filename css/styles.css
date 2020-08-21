@@ -1,9 +1,24 @@
+body {
+  background-color: #eeeeee;
+}
+
 img {
-  width: 25%;
+  width: 50%;
+  border-radius: 50%;
+  padding: 35px 0;
+}
+
+h1 {
+  color: #d72323;
+}
+
+p {
+  color: #303841;
 }
 
 .jumbotron {
   text-align: center;
+  background-color: #3a4750;
 }
 
 #result {
