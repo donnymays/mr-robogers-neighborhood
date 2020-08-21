@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#formOne").submit(function(event) {
+  $("form#formOne").click(function(event) {
     event.preventDefault();
    
     
@@ -12,12 +12,9 @@ $(document).ready(function() {
     });
     
     $("span").each(function(index) {
-      $(this).delay(400*index).fadeIn(300);
-    });
-    
-    $( "#stop" ).click(function() {
-      var stopCount = $("span");
-      stopCount.clearQueue();
+      $(this).delay(400*index).fadeIn(300, function() {
+        $(this).delay(100000*index).fadeOut(30000);
+      });
     });
     
     $('.name').text(nameInput);
