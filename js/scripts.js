@@ -3,9 +3,14 @@ $(document).ready(function() {
     event.preventDefault();
 
     var numInput = parseInt($("input#numInput").val());
-    $("#result").text(robotTranslate(numInput));
+    var resultArray = robotTranslate(numInput);
+    console.log(results);
+    var results = resultArray.map(function(input) {
+      $("#resultList").append("<li>" + input + "</li>");
+    })
+    // $("#result").text(robotTranslate(numInput));
 
-    
+
 
   });
 });
