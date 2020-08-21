@@ -2,12 +2,11 @@
 
 let robotArr = function(input) {
   let numArr = [];
-  let numStr = input.toString();
   for (let i = 0; i <= input; i++) { 
-    if (numStr.indexOf("1")) {
+    if (i.toString().includes("1")) {
        numArr.push("Beep!");
     } else { 
-      numArr.push(numStr);
+      numArr.push(i);
     }
   }
   console.log(numArr);
