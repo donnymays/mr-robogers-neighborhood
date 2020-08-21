@@ -2,7 +2,6 @@ $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
    
-    
     var nameInput = $("input#name").val();
     var numInput = parseInt($("input#numInput").val());
     var resultArray = robotTranslate(numInput);
@@ -13,8 +12,8 @@ $(document).ready(function() {
     
     $("span").each(function(index) {
       $(this).delay(400*index).fadeIn(300) 
-
     }); 
+    
     $('.name').text(nameInput);
     if (nameInput === "")  {
       alert("Please Enter Your Name!");
@@ -38,4 +37,3 @@ var robotTranslate = function(numInput) {
   return numArr;
 };
 
-    

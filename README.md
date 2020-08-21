@@ -14,7 +14,7 @@ _This is a site designed to take a number in from a user and count up to their n
 
 ## Setup/Installation Requirements
 
-* _To view this project as a website visit: _
+* _To view this project as a website visit: https://donnymays.github.io/mr-robogers-neighborhood/ _
 * _To view and/or edit the files for this project:_
 * _Open a command line tool_
 * _Navigate to the desktop (or whatever directory you'd like to save the files) using the cd command_
