@@ -1,19 +1,26 @@
 // Business Logic
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
 
-let robotArr = function(input) {
-  let numArr = [];
-  for (let i = 0; i <= input; i++) { 
-    if (i.toString().includes("3")) {
-      numArr.push("Won't you be my neighbor?");
-    } else if (i.toString().includes("2")) {
-      numArr.push("Boop!");
-    } else if (i.toString().includes("1")) {
-      numArr.push("Beep!");
-      
-    } else { 
-      numArr.push(i);
+    let numArr = [];
+    let robotArr = function(numInput) {
+      for (let i = 0; i <= numInput; i++) { 
+        if (i.toString().includes("3")) {
+          numArr.push("Won't you be my neighbor?");
+        } else if (i.toString().includes("2")) {
+          numArr.push("Boop!");
+        } else if (i.toString().includes("1")) {
+          numArr.push("Beep!");
+          
+        } else { 
+          numArr.push(i);
+        }
+      }
+      return(numArr.toString());
     }
-  }
-  console.log(numArr);
-}
 
+
+    $("#result").text(numArr);
+  });
+});
