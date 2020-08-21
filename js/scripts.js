@@ -3,6 +3,8 @@ $(document).ready(function() {
     event.preventDefault();
 
     var numInput = parseInt($("input#numInput").val());
+   
+   
     $("#result").text(robotTranslate(numInput));
 
   });
