@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#formOne").click(function(event) {
+  $("form#formOne").submit(function(event) {
     event.preventDefault();
    
     
@@ -12,18 +12,14 @@ $(document).ready(function() {
     });
     
     $("span").each(function(index) {
-      $(this).delay(400*index).fadeIn(300, function() {
-        $(this).delay(100000*index).fadeOut(30000);
-      });
+      $(this).delay(400*index).fadeIn(300) 
+
     });
     
     $('.name').text(nameInput);
-
-
-    // $("#result").text(robotTranslate(numInput));
-
-
-
+    if (nameInput === "")  {
+      alert("Please Enter Your Name!");
+    };
   });
 });
 
