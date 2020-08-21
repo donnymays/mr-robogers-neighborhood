@@ -4,9 +4,8 @@ $(document).ready(function() {
 
     var numInput = parseInt($("input#numInput").val());
     var resultArray = robotTranslate(numInput);
-    console.log(results);
     var results = resultArray.map(function(input) {
-      $("#resultList").append("<li>" + input + "</li>");
+      $("#resultList").append("<span>" + input + ", " + "</span>");
     })
     // $("#result").text(robotTranslate(numInput));
 
