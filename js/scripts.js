@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     });
     
+    numArr = [];
     $('.name').text(nameInput);
     if (nameInput === "")  {
       alert("Please Enter Your Name!");
