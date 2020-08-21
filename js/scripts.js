@@ -6,13 +6,19 @@ $(document).ready(function() {
     var nameInput = $("input#name").val();
     var numInput = parseInt($("input#numInput").val());
     var resultArray = robotTranslate(numInput);
+    
     var results = resultArray.map(function(robotNum) {
       $("#resultList").append("<span>" + robotNum + "</span>");
     });
+    
     $("span").each(function(index) {
-      $(this).delay(400*index).fadeIn(300).delay(800*index).fadeOut(300);
+      $(this).delay(400*index).fadeIn(300);
     });
-  
+    
+    $( "#stop" ).click(function() {
+      var stopCount = $("span");
+      stopCount.clearQueue();
+    });
     
     $('.name').text(nameInput);
 
