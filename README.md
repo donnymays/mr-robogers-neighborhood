@@ -22,6 +22,10 @@ _This is a site designed to take a number in from a user and count up to their n
 * _Then: $ cd mr-robogers-neighborhood_
 * _Then: $ code ._
 
+## Known Bugs
+
+_After submission, when a new number is inputted, the counter begins counting on top of the previous count, rather than restarting._
+
 
 ## Support and contact details
 

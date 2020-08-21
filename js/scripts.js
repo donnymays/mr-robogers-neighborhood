@@ -14,9 +14,7 @@ $(document).ready(function() {
     $("span").each(function(index) {
       $(this).delay(400*index).fadeIn(300) 
 
-    });
-    
-    numArr = [];
+    }); 
     $('.name').text(nameInput);
     if (nameInput === "")  {
       alert("Please Enter Your Name!");
@@ -38,6 +36,6 @@ var robotTranslate = function(numInput) {
     }
   }
   return numArr;
-}
+};
 
     
