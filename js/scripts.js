@@ -3,10 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var numInput = parseInt($("input#numInput").val());
-    // $("#result").text(robotTranslate(numInput));
-    $("#result").each(function(index) {
-      $(this).delay(400*index).fadeIn(300);
-  });
+    $("#result").text(robotTranslate(numInput));
 
   });
 });
