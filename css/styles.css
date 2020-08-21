@@ -35,10 +35,23 @@ label {
   background-color: #3a4750;
 }
 
+.footer {
+  background-color: #303841;
+  color: #eeeeee;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 #result {
   padding: 50px 0;
   text-align: center;
   
+
+  
   /* display: none; */
 }
+
+
 
