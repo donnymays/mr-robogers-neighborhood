@@ -1,4 +1,10 @@
+img {
+  width: 25%;
+}
 
+.jumbotron {
+  text-align: center;
+}
 
 #result {
   display: none;
