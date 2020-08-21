@@ -10,10 +10,24 @@ img {
 
 h1 {
   color: #d72323;
+  font-Family: 'Raleway', Sans-Serif;
+  font-Size: 44px;
 }
 
 p {
-  color: #303841;
+  color: #eeeeee;
+  font-Family: 'Open Sans', Sans-Serif;
+  font-Size: 15px;
+}
+
+label {
+  color: #303841 ;
+  font-Family: 'Open Sans', Sans-Serif;
+}
+
+.buttonDiv {
+  text-align: center;
+  padding: 50px 0;
 }
 
 .jumbotron {
@@ -22,5 +36,9 @@ p {
 }
 
 #result {
-  display: none;
+  padding: 50px 0;
+  text-align: center;
+  
+  /* display: none; */
 }
+
