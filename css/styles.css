@@ -25,6 +25,10 @@ label {
   font-Family: 'Open Sans', Sans-Serif;
 }
 
+span {
+  display: none;
+}
+
 .buttonDiv {
   text-align: center;
   padding: 50px 0;

@@ -6,7 +6,10 @@ $(document).ready(function() {
     var resultArray = robotTranslate(numInput);
     var results = resultArray.map(function(robotNum) {
       $("#resultList").append("<span>" + robotNum + ", " + "</span>");
-    })
+    });
+    $("span").each(function(index) {
+      $(this).delay(400*index).fadeIn(300);
+    });
   
 
 
