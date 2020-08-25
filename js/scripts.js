@@ -28,15 +28,16 @@ var robotTranslate = function(numInput) {
     if (nameInput === "")  {
       alert("Please Enter Your Name!");
     } else {
+      var resultArray = [];
       var resultArray = robotTranslate(numInput);
-      var results = resultArray.map(function(robotNum) {
+      resultArray.map(function(robotNum) {
         var resultList = $("#resultList");
-       
         resultList.append("<span>" + robotNum + "</span>");
       });
       $("span").each(function(index) {
-        $(this).delay(600*index).fadeIn(600)
+        $(this).delay(600*index).fadeIn(600) 
       });
+
     };    
   });
 });
