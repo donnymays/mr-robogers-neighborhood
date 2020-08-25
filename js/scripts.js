@@ -11,13 +11,16 @@ var robotTranslate = function(numInput) {
       numArr.push(" Beep!");   
     } else { 
       numArr.push(" " + i);
-    }
-  }
+    };
+  };
   return numArr;
 };  
 
     var numInput = parseInt($("input#numInput").val());
     var nameInput = $("input#name").val();
+   $("input#numInput").val("");
+   $("input#name").val("");
+   
     $('.name').text(nameInput);
 
     numArr = [];
@@ -25,16 +28,15 @@ var robotTranslate = function(numInput) {
     if (nameInput === "")  {
       alert("Please Enter Your Name!");
     } else {
-      resultArray = [];
       var resultArray = robotTranslate(numInput);
       var results = resultArray.map(function(robotNum) {
-        $("#resultList").append("<span>" + robotNum + "</span>");
+        var resultList = $("#resultList");
+       
+        resultList.append("<span>" + robotNum + "</span>");
       });
       $("span").each(function(index) {
-        $(this).delay(600*index).fadeIn(600, function() {
-         $(this).delay(50000).empty();
-        }); 
-      }); 
-    };
+        $(this).delay(600*index).fadeIn(600)
+      });
+    };    
   });
 });
