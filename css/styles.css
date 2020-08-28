@@ -27,6 +27,7 @@ label {
 
 span {
   display: none;
+  display: block;
 }
 
 .submitDiv {
